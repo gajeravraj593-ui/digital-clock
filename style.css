@@ -1,15 +1,15 @@
-/* From Uiverse.io by Cksunandh */ 
+
 .m2 {
   position: absolute;
-  width: 60vmin; /* Reduced size */
-  height: 20vmin; /* Reduced size */
+  width: 60vmin; 
+  height: 20vmin;
   background: linear-gradient(135deg, #1e1e24 10%, #050505 60%);
   display: flex;
   align-items: center;
   justify-content: center;
   user-select: none;
-  animation: gradient-shift 5s ease-in-out infinite; /* Faster animation */
-  background-size: 200% 200%; /* Gradient shift */
+  animation: gradient-shift 5s ease-in-out infinite; 
+  background-size: 200% 200%; 
   margin-top: 240px;
 }
 
@@ -17,7 +17,7 @@
   display: inline-block;
   vertical-align: baseline;
   user-select: none;
-  font-size: 5vmin; /* Smaller font size */
+  font-size: 5vmin; 
   color: white;
   background-image: linear-gradient(to right, #b4aaaa, #dcd4d4);
   -webkit-text-fill-color: transparent;
@@ -27,13 +27,13 @@
 
 .m2 .logo svg {
   margin-right: -1vmin;
-  width: 5vmin; /* Smaller SVG size */
-  height: 5vmin; /* Smaller SVG size */
+  width: 5vmin; 
+  height: 5vmin; 
 }
 
 .m2::before,
 .m2::after {
-  --size: 5px; /* Reduced glow size */
+  --size: 5px; 
   content: "";
   position: absolute;
   top: calc(var(--size) / -2);
@@ -47,18 +47,18 @@
 }
 
 .m2::after {
-  --size: 2px; /* Reduced inner glow size */
+  --size: 2px; 
   z-index: -1;
 }
 
 .m2::before {
-  --size: 10px; /* Reduced outer glow size */
+  --size: 10px;
   z-index: -2;
-  filter: blur(2vmin); /* Reduced blur */
-  animation: blur-animation 3s ease-in-out alternate infinite; /* Faster blur animation */
+  filter: blur(2vmin);
+  animation: blur-animation 3s ease-in-out alternate infinite; 
 }
 
-/* Faster blur animation */
+
 @keyframes blur-animation {
   to {
     filter: blur(3vmin);
@@ -66,7 +66,7 @@
   }
 }
 
-/* Faster gradient animation */
+
 @keyframes gradient-shift {
   0% {
     background-position: 0% 50%;
@@ -97,4 +97,5 @@ body {
   display: flex;
   width: 250px;
   height: 90px;
+
 }
